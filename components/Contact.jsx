@@ -44,7 +44,7 @@ const Contact = () => {
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and let&apos;s talk.
                 </p>
               </div>
               <div>
@@ -69,7 +69,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <a href="mailto:zobamokoli7@gmail.com" target="_blank">
+                    <a href="mailto:zobamokoli7@gmail.com" target="_blank" rel={"noreferrer"}>
                       <AiOutlineMail />
                     </a>
                   </div>
