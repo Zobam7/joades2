@@ -62,7 +62,7 @@ const huluclone = () => {
                 <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
               <p className="text-gray-600 flex items-center py-2">
-                <RiRadioButtonFill className="pr-1" /> Tmdb Api API
+                <RiRadioButtonFill className="pr-1" /> Tmdb API
               </p>
             </div>
           </div>
