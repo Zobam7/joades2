@@ -36,7 +36,7 @@ const spotifyclone = () => {
 
           <button className="px-4 py-2 mt-4 mr-8 rounded-md hover:scale-105 font-bold  ease-in duration-100 transition">
             <a
-              href="https://spotify-clone-zobam7.vercel.app"
+              href="https://spotify-clone-theta-wheat.vercel.app"
               target={"_blank"}
               rel={"noreferrer"}
             >
