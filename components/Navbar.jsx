@@ -20,7 +20,8 @@ const Navbar = () => {
       router.asPath === "/huluclone" ||
       router.asPath === "/googleclone" ||
       router.asPath === "/educationalwebsite" ||
-      router.asPath === "/elitediner" 
+      router.asPath === "/elitediner" ||
+      router.asPath === "/ig-clone" 
 
     ) {
       setNavBg("transparent");
@@ -178,9 +179,6 @@ const Navbar = () => {
                   <AiOutlineMail />
                 </a>
                 </div>
-                {/* <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
-                </div> */}
               </div>
             </div>
           </div>

@@ -7,6 +7,7 @@ import huluclone from "../public/huluclone.png";
 import googleclone from "../public/googleclone.png";
 import eduweb from "../public/eduweb.png";
 import elitediner from "../public/elitediner.png";
+import igclone from "../public/ig-clone.png";
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 
@@ -19,6 +20,7 @@ const Project = () => {
         </p>
         <h2 className="py-4">What I have Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectItem  title="IG Clone" backgroundImg={igclone} projectUrl="/ig-clone" framework="Next.js"/>
           <ProjectItem  title="Spotify Clone" backgroundImg={spotifyclone} projectUrl="/spotifyclone" framework="Next.js"/>
           <ProjectItem  title="Netflix Clone" backgroundImg={netfliximage} projectUrl="/netflixclone" framework="React.js"/>
           <ProjectItem  title="Google Clone" backgroundImg={googleclone} projectUrl="/googleclone" framework="Next.js"/>
