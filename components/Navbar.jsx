@@ -55,7 +55,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16">
         <Link href="/">
-          <span className="font-bold text-5xl text-[#5651e5] cursor-pointer">ZO</span>
+          <span className="font-bold text-3xl text-[#5651e5] cursor-pointer">JOADES</span>
         </Link>
 
         <div>
