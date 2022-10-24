@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_aolgpoc",
+      "service_1c55e4m",
       "template_2surhs8",
       form.current,
       "g6WEOYmu1-gUHrs1O"
@@ -40,7 +40,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Zobam Okoli</h2>
+                <h2 className="py-2">Johnson A.</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
@@ -52,7 +52,7 @@ const Contact = () => {
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
-                      href="https://linkedin.com/in/zobam-okoli"
+                      href="https://www.linkedin.com/in/johnson-a-bb1abb149"
                       target={"_blank"}
                       rel={"noreferrer"}
                     >
@@ -61,7 +61,7 @@ const Contact = () => {
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
-                      href="https://github.com/zobam7"
+                      href="https://github.com/doktafelz"
                       target={"_blank"}
                       rel={"noreferrer"}
                     >
@@ -69,13 +69,10 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <a href="mailto:zobamokoli7@gmail.com" target="_blank" rel={"noreferrer"}>
+                    <a href="mailto:doktafelz@hotmail.com" target="_blank" rel={"noreferrer"}>
                       <AiOutlineMail />
                     </a>
                   </div>
-                  {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -84,20 +81,6 @@ const Contact = () => {
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form ref={form} onSubmit={sendEmail}>
-                {/* <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                        <div className="flex flex-col">
-                            <label className="uppercase text-sm py-2">
-                                Name
-                            </label>
-                            <input type="text" className="border-2 rounded-lg p-3 flex border-gray-300" />
-                        </div>
-                        <div className="flex flex-col">
-                            <label className="uppercase text-sm py-2">
-                                Phone Number
-                            </label>
-                            <input type="text" className="border-2 rounded-lg p-3 flex border-gray-300" />
-                        </div>
-                    </div> */}
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Name</label>
                   <input

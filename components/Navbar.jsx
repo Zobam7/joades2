@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMail,
+  AiOutlineTwitter,
+  AiOutlineMenu,
+} from "react-icons/ai";
+import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -14,15 +19,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/spotifyclone" ||
-      router.asPath === "/netflixclone" ||
-      router.asPath === "/weatherapp" ||
-      router.asPath === "/huluclone" ||
-      router.asPath === "/googleclone" ||
-      router.asPath === "/educationalwebsite" ||
-      router.asPath === "/elitediner" ||
-      router.asPath === "/ig-clone" 
-
+      router.asPath === "/azure_technical_analyst" ||
+      router.asPath === "/azure_devops" ||
+      router.asPath === "/microsoft_azure_team_lead" ||
+      router.asPath === "/azure_cloud_engineer" ||
+      router.asPath === "/cloud_customer_support" ||
+      router.asPath === "/system_admin"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -55,13 +57,15 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16">
         <Link href="/">
-          <span className="font-bold text-3xl text-[#5651e5] cursor-pointer">JOADES</span>
+          <span className="font-bold text-3xl text-[#5651e5] cursor-pointer">
+            JOADES
+          </span>
         </Link>
 
         <div>
           <ul className="hidden md:flex" style={{ color: `${linkColor}` }}>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase  hover:text-[#5651e5]">
                 Home
               </li>
             </Link>
@@ -70,14 +74,14 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            <Link href="/#skills">
+            <Link href="/#certifications">
               <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
-                Skills
+                Certifications
               </li>
             </Link>
-            <Link href="/#projects">
+            <Link href="/#experience">
               <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
-                Projects
+                Experience
               </li>
             </Link>
             <Link href="/#contact">
@@ -106,7 +110,9 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <span className="font-bold text-4xl text-[#5651e5] cursor-pointer">ZO</span>
+                <span className="font-bold text-4xl text-[#5651e5] cursor-pointer">
+                  ZO
+                </span>
               </Link>
               <div
                 className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer"
@@ -133,14 +139,14 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#certifications">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                  Certifications
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#experience">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
+                  Experience
                 </li>
               </Link>
               <Link href="/#contact">
@@ -149,38 +155,6 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-
-            <div className="pt-10">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Let&apos;s connect
-              </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <a
-                    href="https://linkedin.com/in/zobam-okoli"
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                <a
-                    href="https://github.com/zobam7"
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                  >
-                    <FaGithub />
-                  </a>
-                  
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                <a href="mailto:zobamokoli7@gmail.com" target="_blank" rel={"noreferrer"}>
-                  <AiOutlineMail />
-                </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
