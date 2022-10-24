@@ -25,12 +25,12 @@ const netflixclone = () => {
             Project
           </p>
           <h2 className="py-2">Overview</h2>
-          <p>- Managed the school's IT department.</p>
+          <p>- Managed the school&lsquo;s IT department.</p>
           <p>
             - Introduced the students to Cloud computing services - Office 365,
             G-suite and Dropbox.
           </p>
-          <p>- Helped in maintaining the school's portal.</p>
+          <p>- Helped in maintaining the school&lsquo;s portal.</p>
           <p>
             - I was In charge of everything tech from the Administrative level
             down to the last part.
