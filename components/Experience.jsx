@@ -15,7 +15,6 @@ const ExperienceItem = ({
       <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white">
         <div className="flex flex-wrap gap-x-10 text-sm md:text-base gap-2 justify-evenly items-center">
           <div className="max-w-fit">
-            {/* <Image src={img} width={70} height={70} alt="/" /> */}
             <img src={img} alt="" />
           </div>
           <div className="flex flex-col">
