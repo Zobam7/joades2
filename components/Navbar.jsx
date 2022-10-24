@@ -26,8 +26,8 @@ const Navbar = () => {
       router.asPath === "/cloud_customer_support" ||
       router.asPath === "/system_admin"
     ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      // setNavBg("transparent");
+      setLinkColor("black");
     } else {
       setNavBg("#ecf0f3");
       setLinkColor("#1f2937");
