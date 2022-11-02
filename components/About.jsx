@@ -16,7 +16,7 @@ const About = () => {
           <p className="py-2 text-gray-600 max-w-xl">
             Johnson is a Versatile Engineer with 7+ years of experience managing
             complex Cloud, Hybrid, and on-premises Infrastructures. Hands-on
-            Experience in Azure, Vmware. I'm very enthusiastic about the Cloud,
+            Experience in Azure, Vmware. I&lsquo;m very enthusiastic about the Cloud,
             DevOps, and Cybersecurity. A highly energetic and certified IT
             Professional with experience in Enterprise Solutions Architecture,
             Data Operations, Process Development, Corporate Training, Software
