@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import tekExperts from "../public/tek_expert_background.png";
+import tekExperts from "../public/tek_experts.png";
 
 const huluclone = () => {
   return (
     <div className="w-full overflow-hidden">
       <div className="w-screen h-[30vh] lg:h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/80 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/50 z-10" />
         <Image
           src={tekExperts}
           className="absolute z-1"
@@ -25,9 +25,9 @@ const huluclone = () => {
             Experience
           </p>
           <h2 className="py-2">Overview</h2>
+          <p>• Cloud Networking Technical Support to Customers worldwide.</p>
           <p>
-            • Cloud Networking Technical Support to Customers worldwide. •
-            Constantly repro&lsquo;ing customers environment to resolve
+            • Constantly repro&lsquo;ing customers environment to resolve
             technical issues that are not limited to Application Gateway, VPN,
             EXPRESSROUTE, Load Balancers and Virtual Networks to get a better
             insight to issues being face by Azure customer while driving towards
@@ -49,14 +49,11 @@ const huluclone = () => {
           </p>
           <p>
             • Configuration & Troubleshooting of Phase 1 and Phase 2 VPN Tunnels
-            with Cisco ASA, SonicWall,
+            with Cisco ASA, SonicWall, Barracuda, Palo Alto devices etc.
           </p>
-          <p>
-            Barracuda, Palo Alto devices etc. • Configuration & Troubleshooting
-            of NSG, ACL, WAF, UDR.
-          </p>
+          <p>• Configuration & Troubleshooting of NSG, ACL, WAF, UDR.</p>
         </div>
-        <Link href="/#projects">
+        <Link href="/#experience">
           <p className="underline cursor-pointer text-[#5651e5] mt-10">Back</p>
         </Link>
       </div>

@@ -36,7 +36,7 @@ const netflixclone = () => {
             down to the last part.
           </p>
         </div>
-        <Link href="/#projects">
+        <Link href="/#experience">
           <p className="underline cursor-pointer text-[#5651e5] mt-10">Back</p>
         </Link>
       </div>

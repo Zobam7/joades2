@@ -51,7 +51,7 @@ const educationalwebsite = () => {
             by coordinating with project manager to create and execute projects.
           </p>
         </div>
-        <Link href="/#projects">
+        <Link href="/#experience">
           <p className="underline cursor-pointer text-[#5651e5] mt-10">Back</p>
         </Link>
       </div>

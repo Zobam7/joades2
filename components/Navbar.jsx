@@ -84,6 +84,11 @@ const Navbar = () => {
                 Experience
               </li>
             </Link>
+            <Link href="/#skills">
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
+                Skills
+              </li>
+            </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
                 Contact
@@ -110,8 +115,8 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <span className="font-bold text-4xl text-[#5651e5] cursor-pointer">
-                  ZO
+                <span className="font-bold text-2xl text-[#5651e5] cursor-pointer">
+                  JOADES
                 </span>
               </Link>
               <div
@@ -147,6 +152,11 @@ const Navbar = () => {
               <Link href="/#experience">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Experience
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
                 </li>
               </Link>
               <Link href="/#contact">

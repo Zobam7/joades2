@@ -51,7 +51,7 @@ const instaclone = () => {
           </p>
           <p>• Follow communication procedures, guidelines and policies</p>
         </div>
-        <Link href="/#projects">
+        <Link href="/#experience">
           <p className="underline cursor-pointer mt-10 text-[#5651e5]">Back</p>
         </Link>
       </div>

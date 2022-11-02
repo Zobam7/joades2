@@ -7,6 +7,7 @@ import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Experience from '../components/Experiences'
 import Volunteer from '../components/Volunteer'
+import Skills from '../components/Skills'
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Main />
       <About />
       <Certifications />
+      <Skills />
       <Experience />
       <Volunteer />
       

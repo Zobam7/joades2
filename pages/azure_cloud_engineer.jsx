@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import tekExperts from "../public/tek_expert_background.png";
+import tekExperts from "../public/tek_experts.png";
 
 const huluclone = () => {
   return (
     <div className="w-full overflow-hidden">
       <div className="w-screen h-[30vh] lg:h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/80 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/50 z-10" />
         <Image
           src={tekExperts}
           className="absolute z-1"
@@ -34,7 +34,7 @@ const huluclone = () => {
             team.
           </p>
         </div>
-        <Link href="/#projects">
+        <Link href="/#experience">
           <p className="underline cursor-pointer text-[#5651e5] mt-10">Back</p>
         </Link>
       </div>

@@ -18,11 +18,10 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I&apos;m <span className="text-[#5651e5]">Johnson</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700">A DevOps Engineer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] mx-auto">
             {" "}
-            I am a Front End Dev with emphasis on building and writing readable
-            and scaleable codes using typescript to make it completely bug free.
+            Johnson is a versatile Engineer with <strong>7+ years </strong>of experience managing complex Cloud, Hybrid and on-premises Infrastructures.
           </p>
           <div className="flex flex-wrap items-center justify-center mx-auto py-4 gap-5">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -61,24 +60,7 @@ const Main = () => {
                 <BsTwitter />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a
-                href="https://wa.me/2349065579819"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsWhatsapp />
-              </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a
-                href="https://www.instagram.com/_oluwafela/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsInstagram />
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>

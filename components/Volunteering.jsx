@@ -21,7 +21,7 @@ const Volunteering = ({
             <p className="text-[12px] font-semibold">{subtitle}</p>
             <small className="">{date}</small>
             <small>{field}</small>
-            <p className="pt-2 ">{desc}</p>
+            <p className="pt-2">{desc}</p>
           </div>
         </div>
       </div>

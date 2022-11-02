@@ -14,21 +14,30 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600 max-w-xl">
-            A subject matter expert in areas of the Windows desktop operating
-            system as well as multiple cloud providers, TCP / IP, Routers, WAPs,
-            Wireless, GITHUB, Azure, ITIL, AWS, Azure Admin, and load balancing.
-            Cloud Engineer professional possessing exceptional attention to
-            detail, customer service, customer success professional written, and
-            interpersonal skills. A technical analyst and I have a proven
-            ability in addressing and overcoming obstacles, with the use of
-            problem-solving and critical thinking.
+            Johnson is a Versatile Engineer with 7+ years of experience managing
+            complex Cloud, Hybrid, and on-premises Infrastructures. Hands-on
+            Experience in Azure, Vmware. I'm very enthusiastic about the Cloud,
+            DevOps, and Cybersecurity. A highly energetic and certified IT
+            Professional with experience in Enterprise Solutions Architecture,
+            Data Operations, Process Development, Corporate Training, Software
+            Testing and Infrastructure Management. A well-organized,
+            results-oriented individual with a strong passion for analyzing and
+            organizing information to solve problems; developing, and executing
+            strategies for business growth & improvement, identifying new
+            opportunities and positioning technology solutions to meet digital
+            transformation needs. An experienced Support Engineer and a proven
+            team leader.
           </p>
           <p className="py-2  underline cursor-pointer uppercase  text-[#5651e5]">
             <Link href="/#projects">Check out my Experiences</Link>{" "}
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img className="rounded-xl" src="https://media-exp1.licdn.com/dms/image/C4D03AQFVV_0AjKp67w/profile-displayphoto-shrink_400_400/0/1653254371408?e=1671667200&v=beta&t=s9qu1lapp7gGbT1KDl5I72SZCUSS0M1ExFZjQDdq8ks" alt="aboutMe" />
+          <img
+            className="rounded-xl "
+            src="/about2.jpg"
+            alt="aboutMe"
+          />
         </div>
       </div>
     </div>

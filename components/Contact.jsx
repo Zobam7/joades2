@@ -41,15 +41,13 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Johnson A.</h2>
-                <p>Front-End Developer</p>
                 <p className="py-4">
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
+                 IT Security Engineer | Platform Engineer | Cloud Engineer | Customer Support | Team Lead | Technical Support | Software Tester | DevOps Engineer
                 </p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect with Me</p>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-evenly py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/johnson-a-bb1abb149"

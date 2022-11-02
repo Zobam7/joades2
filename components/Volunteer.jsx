@@ -27,6 +27,14 @@ const Volunteer = () => {
       desc: 'Did you know that 6 out of 10 most successful tech leaders started coding before the age of 15?!',
       img: "/creative_zone.jpeg",
     },
+    {
+      title: "Marketing and Media",
+      subtitle: "The Makoko Dream",
+      date: "Aug 2019 - Present · 3 yrs 4 mos",
+      field: "Poverty Alleviation",
+      desc: "WE ARE A BODY OF YOUNG, VIBRANT INDIVIDUALS NOT DEFINED BY CULTURE OR RELIGION, SET OUT TO INSPIRE GREATNESS IN URBAN-SLUM CHILDREN VIA EDUCATION, SKILL ACQUISITION AND URBAN EMPOWERMENT WE BELIEVE EDUCATION IS IMPORTANT IN REDUCING CHILD LABOUR TO MEASURE OUR PROGRESS.",
+      img: "/makoko.jpeg"
+    }
   ];
   return (
     <div id="experience" className="w-full">

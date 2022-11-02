@@ -26,7 +26,7 @@ const Experience = () => {
       date: "Apr 2019 - Sep 2019 · 6 mos",
       location: "Lagos, Nigeria",
       experienceUrl: "/microsoft_azure_team_lead",
-      img: "/tek_experts.jpeg",
+      img: "/tek_experts.png",
     },
     {
       title: "Tek Experts",
@@ -34,7 +34,7 @@ const Experience = () => {
       date: "Jan 2019 - Mar 2020 · 3 mos",
       location: "Lagos, Nigeria",
       experienceUrl: "/azure_cloud_engineer",
-      img: "/tek_experts.jpeg",
+      img: "/tek_experts.png",
     },
     {
       title: "Tek Experts",
@@ -42,7 +42,7 @@ const Experience = () => {
       date: "Sep 2018 - Mar 2019 · 7 mos",
       location: "Lagos, Nigeria",
       experienceUrl: "/azure_cloud_engineer2",
-      img: "/tek_experts.jpeg",
+      img: "/tek_experts.png",
     },
     {
       title: "Cloud Customer Support Executive",
