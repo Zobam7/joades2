@@ -11,8 +11,8 @@ const Volunteering = ({
 }) => {
   return (
     <div>
-      <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white">
-        <div className="flex flex-wrap gap-x-10 text-sm md:text-base gap-2 justify-evenly items-center">
+      <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white h-max">
+        <div className="flex flex-wrap text-sm md:text-base gap-2 justify-evenly items-center">
           <div className="max-w-fit">
             <img src={img} alt="" className="w-[100px] h-[100px]"/>
           </div>

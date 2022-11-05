@@ -21,11 +21,10 @@ export default function Home() {
 
       <Main />
       <About />
-      <Certifications />
-      <Skills />
       <Experience />
+      <Skills />
+      <Certifications />
       <Volunteer />
-      
       <Contact />
     </div>
   )

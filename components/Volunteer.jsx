@@ -28,13 +28,22 @@ const Volunteer = () => {
       img: "/creative_zone.jpeg",
     },
     {
+      title: "The December Project",
+      subtitle: "No one left hungry",
+      date: "Dec 2020 - Present",
+      field: "Poverty Alleviation",
+      desc: "Exco, The December Project",
+      img: "/december_project.jpeg"
+    },
+    {
       title: "Marketing and Media",
       subtitle: "The Makoko Dream",
       date: "Aug 2019 - Present · 3 yrs 4 mos",
       field: "Poverty Alleviation",
-      desc: "WE ARE A BODY OF YOUNG, VIBRANT INDIVIDUALS NOT DEFINED BY CULTURE OR RELIGION, SET OUT TO INSPIRE GREATNESS IN URBAN-SLUM CHILDREN VIA EDUCATION, SKILL ACQUISITION AND URBAN EMPOWERMENT WE BELIEVE EDUCATION IS IMPORTANT IN REDUCING CHILD LABOUR TO MEASURE OUR PROGRESS.",
+      desc: "We are a body of young, vibrant individuals not defined by culture or religion, set out to inspire greatness in urban-slum children via education, skill acquisition and urban empowerment we believe education is important in reducing child labour to measure our progress.",
       img: "/makoko.jpeg"
-    }
+    },
+    
   ];
   return (
     <div id="experience" className="w-full">

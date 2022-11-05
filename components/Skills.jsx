@@ -63,11 +63,6 @@ const Skills = () => {
             img : "/skills/powershell.jpeg",
             text : "Powershell"
         },
-
-        // {
-        //     img : "",
-        //     text : "Chef"
-        // },
         {
             img : "/skills/ansible.png",
             text : "Ansible"

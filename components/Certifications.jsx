@@ -45,6 +45,12 @@ const Certifications = () => {
       subtitle: "Microsoft",
       date: "Issued May 2020",
     },
+    {
+      img: "/babcock.jpeg",
+      title: "B.Sc Computer Science (Information Systems)",
+      subtitle: "Babcock University",
+      date: "Issued 2016",
+    },
   ];
   return (
     <div id="certifications" className="w-full p-16">

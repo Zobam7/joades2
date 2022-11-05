@@ -13,7 +13,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600 max-w-xl">
+          <p className="py-2 text-gray-600 max-w-xl tracking-wider break-words">
             Johnson is a Versatile Engineer with 7+ years of experience managing
             complex Cloud, Hybrid, and on-premises Infrastructures. Hands-on
             Experience in Azure, Vmware. I&lsquo;m very enthusiastic about the Cloud,

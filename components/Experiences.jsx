@@ -4,6 +4,14 @@ import ExperienceItem from "./Experience";
 const Experience = () => {
   const experience_details = [
     {
+      title: "Cloud/DevOps Engineer",
+      subtitle: "Freelance · Part-time",
+      date: "Sep 2021- Present",
+      location: "Remote",
+      experienceUrl: "/freelance_cloudDevops",
+      img: "/fiverr.png",
+    },
+    {
       title: "Azure Technical Analyst",
       subtitle: "NTS Africa Services Limited · Full-time",
       date: "Dec 2019 - Jul 2020 · 8 mos",

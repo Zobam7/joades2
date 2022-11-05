@@ -74,9 +74,9 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            <Link href="/#certifications">
+            <Link href="/#experience">
               <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
-                Certifications
+                Experience
               </li>
             </Link>
             <Link href="/#skills">
@@ -84,9 +84,9 @@ const Navbar = () => {
                 Skills
               </li>
             </Link>
-            <Link href="/#experience">
+            <Link href="/#certifications">
               <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">
-                Experience
+                Certifications
               </li>
             </Link>
             <Link href="/#contact">
@@ -144,9 +144,9 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/#certifications">
+              <Link href="/#experience">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Certifications
+                  Experience
                 </li>
               </Link>
               <Link href="/#skills">
@@ -154,9 +154,9 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              <Link href="/#experience">
+              <Link href="/#certifications">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Experience
+                  Certifications
                 </li>
               </Link>
               <Link href="/#contact">
