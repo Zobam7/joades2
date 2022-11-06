@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import contact from "../public/contact2.jpg";
+import contact from "../public/contact_photo.jpg";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";

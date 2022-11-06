@@ -29,7 +29,7 @@ const About = () => {
             team leader.
           </p>
           <p className="py-2  underline cursor-pointer uppercase  text-[#5651e5]">
-            <Link href="/#projects">Check out my Experiences</Link>{" "}
+            <Link href="/#experience">Check out my Experiences</Link>{" "}
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

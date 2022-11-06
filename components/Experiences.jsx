@@ -75,7 +75,7 @@ const Experience = () => {
         <p className="uppercase text-xl tracking-widest text-[#5651e5]">
           Experience
         </p>
-        <h2 className="py-4">My Experience</h2>
+        <h2 className="py-4">Work Experience</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {experience_details.map((x, index) => {
             return (

@@ -100,6 +100,18 @@ const Skills = () => {
             text : "Jira"
         },
         {
+            img: "/skills/salesforce.png",
+            text: 'Salesforce'
+        },
+        {
+            img: "/skills/hubspot.png",
+            text: 'Hubspot'
+        },
+        {
+            img: "/skills/whmcs.png",
+            text: 'Whmcs'
+        },
+        {
             img : "/skills/zendesk.png",
             text : "Zendesk Admin"
         },
