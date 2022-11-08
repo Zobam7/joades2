@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import contact from "../public/contact_photo2.jpg";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -13,14 +13,12 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm(
       "service_q78bbos",
       "template_jexirgc",
       form.current,
       "_XiK61XJLxze9QjgL"
     );
-
     e.target.reset();
 
     let timerInterval;
@@ -105,6 +103,7 @@ const Contact = () => {
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       name="name"
+                      required
                       type="text"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
@@ -113,6 +112,7 @@ const Contact = () => {
                     <label className="uppercase text-sm py-2">Email</label>
                     <input
                       name="email"
+                      required
                       type="email"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
@@ -121,6 +121,7 @@ const Contact = () => {
                     <label className="uppercase text-sm py-2">Subject</label>
                     <input
                       name="subject"
+                      required
                       type="text"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                     />
@@ -129,6 +130,7 @@ const Contact = () => {
                     <label className="uppercase text-sm py-2">Message</label>
                     <textarea
                       name="message"
+                      required
                       className="border-2 rounded-lg p-3 border-gray-300"
                       rows="5"
                     ></textarea>
