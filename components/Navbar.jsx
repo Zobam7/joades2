@@ -2,12 +2,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   AiOutlineClose,
-  AiOutlineMail,
-  AiOutlineTwitter,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const Navbar = () => {

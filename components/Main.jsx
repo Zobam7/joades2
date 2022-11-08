@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  AiOutlineInstagram,
   AiOutlineMail,
-  AiOutlineTwitter,
 } from "react-icons/ai";
-import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import {  BsTwitter } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
