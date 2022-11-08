@@ -1,5 +1,5 @@
 import React from 'react'
-import Skills_details from "./Skills_details"
+import Skills_details from "./SkillsItem"
 
 const Skills = () => {
     const skillsList = [

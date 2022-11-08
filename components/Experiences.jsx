@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceItem from "./Experience";
+import ExperienceItem from "./ExperienceItem";
 
 const Experience = () => {
   const experience_details = [

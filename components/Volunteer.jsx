@@ -1,5 +1,5 @@
 import React from "react";
-import Voluteering from "./Volunteering";
+import Voluteering from "./VolunteerItem";
 
 const Volunteer = () => {
   const voluteer_details = [
