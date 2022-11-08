@@ -53,8 +53,9 @@ const Certifications = () => {
     },
   ];
   return (
-    <div id="certifications" className="w-full p-16">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+    <div id="certifications">
+    <div className="w-full min-h-screen pt-10">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Certifications
         </p>
@@ -73,6 +74,8 @@ const Certifications = () => {
           })}
         </div>
       </div>
+    </div>
+
     </div>
   );
 };

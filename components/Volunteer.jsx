@@ -46,7 +46,7 @@ const Volunteer = () => {
     
   ];
   return (
-    <div id="experience" className="w-full">
+    <div className="w-full">
       <div className="max-w-[1240px] mx-auto px-16 py-16">
         <p className="uppercase text-xl tracking-widest text-[#5651e5]">
           Volunteer
