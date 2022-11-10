@@ -28,12 +28,12 @@ const Volunteer = () => {
       img: "/creative_zone.jpeg",
     },
     {
-      title: "The December Project",
-      subtitle: "No one left hungry",
-      date: "Dec 2020 - Present",
-      field: "Poverty Alleviation",
-      desc: "Exco, The December Project",
-      img: "/december_project.jpeg"
+      title: "Mentor",
+      subtitle: "Femme Palette",
+      date: "Aug 2022 - Present",
+      field: "Mentorship",
+      desc: "We help people, teams, and companies thrive through mentorship, a personalized approach to career development.",
+      img: "/femmepalette.jpeg"
     },
     {
       title: "Marketing and Media",
@@ -43,7 +43,14 @@ const Volunteer = () => {
       desc: "We are a body of young, vibrant individuals not defined by culture or religion, set out to inspire greatness in urban-slum children via education, skill acquisition and urban empowerment we believe education is important in reducing child labour to measure our progress.",
       img: "/makoko.jpeg"
     },
-    
+    {
+      title: "The December Project",
+      subtitle: "No one left hungry",
+      date: "Dec 2020 - Present",
+      field: "Poverty Alleviation",
+      desc: "Exco, The December Project",
+      img: "/december_project.jpeg"
+    },
   ];
   return (
     <div className="w-full">
