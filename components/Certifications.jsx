@@ -1,7 +1,7 @@
 import React from "react";
 import Certificate from "./Certificate";
 
-const Certifications = () => {
+const Certifications = ({ certifications }) => {
   const certificate_details = [
     {
       img: "/icsi.jpeg",
@@ -54,28 +54,30 @@ const Certifications = () => {
   ];
   return (
     <div id="certifications">
-    <div className="w-full min-h-screen pt-10">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Certifications
-        </p>
-        <h2 className="py-4">My Credentials</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {certificate_details.map((x, index) => {
-            return (
-              <Certificate
-                img={x.img}
-                title={x.title}
-                subtitle={x.subtitle}
-                date={x.date}
-                key={index}
-              />
-            );
-          })}
+      <div className="w-full min-h-screen pt-10">
+        <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-16">
+          <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+            Certifications
+          </p>
+          <h2 className="py-4">My Credentials</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {certifications?.map((x, index) => {
+              const imgurl =
+                process.env.NEXT_PUBLIC_BASEURL +
+                x?.logo?.data?.attributes?.url;
+              return (
+                <Certificate
+                  img={imgurl}
+                  title={x.title}
+                  subtitle={x.company}
+                  date={x.dateIssued}
+                  key={index}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
-
     </div>
   );
 };

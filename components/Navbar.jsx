@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import {
-  AiOutlineClose,
-  AiOutlineMenu,
-} from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -13,22 +10,22 @@ const Navbar = () => {
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
-  useEffect(() => {
-    if (
-      router.asPath === "/azure_technical_analyst" ||
-      router.asPath === "/azure_devops" ||
-      router.asPath === "/microsoft_azure_team_lead" ||
-      router.asPath === "/azure_cloud_engineer" ||
-      router.asPath === "/cloud_customer_support" ||
-      router.asPath === "/system_admin"
-    ) {
-      // setNavBg("transparent");
-      setLinkColor("black");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (
+  //     router.asPath === "/azure_technical_analyst" ||
+  //     router.asPath === "/azure_devops" ||
+  //     router.asPath === "/microsoft_azure_team_lead" ||
+  //     router.asPath === "/azure_cloud_engineer" ||
+  //     router.asPath === "/cloud_customer_support" ||
+  //     router.asPath === "/system_admin"
+  //   ) {
+  //     // setNavBg("transparent");
+  //     setLinkColor("black");
+  //   } else {
+  //     setNavBg("#ecf0f3");
+  //     setLinkColor("#1f2937");
+  //   }
+  // }, [router]);
   const handleNav = () => {
     setNav(!nav);
   };
