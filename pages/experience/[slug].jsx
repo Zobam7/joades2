@@ -57,7 +57,7 @@ export default function Page() {
     <div>
       {Object.keys(experienceObject).map((id) => (
         <div className="" key={id}>
-          <div className="relative w-full mx-auto">
+          <div className="relative w-full mx-auto h-64">
             <img
               className="h-64 w-full object-cover rounded-md"
               src={
