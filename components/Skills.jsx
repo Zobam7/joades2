@@ -11,10 +11,8 @@ const Skills = ({ skills }) => {
           </p>
           <h2 className="py-4">What I Can Do</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {skills?.map((x, index) => {
-              const imgurl =
-                process.env.NEXT_PUBLIC_BASEURL +
-                x?.logo?.data?.attributes?.url;
+            {skills.map((x, index) => {
+              const imgurl = x.logo.data.attributes.url;
               return <Skills_details img={imgurl} text={x.skill} key={index} />;
             })}
           </div>

@@ -61,10 +61,8 @@ const Certifications = ({ certifications }) => {
           </p>
           <h2 className="py-4">My Credentials</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {certifications?.map((x, index) => {
-              const imgurl =
-                process.env.NEXT_PUBLIC_BASEURL +
-                x?.logo?.data?.attributes?.url;
+            {certifications.map((x, index) => {
+              const imgurl = x.logo.data.attributes.url;
               return (
                 <Certificate
                   img={imgurl}

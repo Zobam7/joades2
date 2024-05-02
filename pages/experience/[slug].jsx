@@ -2,42 +2,44 @@ import Link from "next/link";
 import Router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
+import Image from "next/image";
+import { fetcher } from "../../lib/api";
 
-export default function Page() {
+export default function Page({ data }) {
   const router = useRouter();
   const experienceId = router.query.slug;
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [data, setData] = useState(null);
+  // const [error, setError] = useState(null);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(
-          process.env.NEXT_PUBLIC_BASEURL + "/api/home-page"
-        );
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const jsonData = await response.json();
-        setData(jsonData.data.attributes.experience);
-      } catch (error) {
-        console.log(error);
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const response = await fetch(
+  //         process.env.NEXT_PUBLIC_BASEURL + "/api/home-page"
+  //       );
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch data");
+  //       }
+  //       const jsonData = await response.json();
+  //       setData(jsonData.data.attributes.experience);
+  //     } catch (error) {
+  //       console.log(error);
+  //       setError(error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   const experience = data?.filter(
     (experience) => experience.id == experienceId
   );
 
-  const experienceObject = experience?.reduce((acc, cur) => {
+  const experienceObject = experience.reduce((acc, cur) => {
     acc[cur.id] = {
       jobTitle: cur.jobTitle,
       role: cur.role,
@@ -45,6 +47,7 @@ export default function Page() {
       location: cur.location,
       logo: cur.logo,
       workDesc: cur.workDesc,
+      backgroundImgUrl: cur.backgroundImgUrl,
     };
     return acc;
   }, {});
@@ -53,17 +56,20 @@ export default function Page() {
     return <div>No data available</div>;
   }
 
+  const myLoader = ({ src }) => {
+    return experienceObject[experienceId].backgroundImgUrl.data.attributes.url;
+  };
+
   return (
     <div>
       {Object.keys(experienceObject).map((id) => (
         <div className="" key={id}>
-          <div className="relative w-full mx-auto h-64">
-            <img
-              className="h-64 w-full object-cover rounded-md"
-              src={
-                process.env.NEXT_PUBLIC_BASEURL +
-                experienceObject[id].logo?.data?.attributes?.url
-              }
+          <div className="relative w-full mx-auto h-64 bg-black/50">
+            <Image
+              loader={myLoader}
+              layout="fill"
+              className="h-64 w-full object-cover rounded-md "
+              src={experienceObject[id].backgroundImgUrl.data.attributes.url}
               alt="Random image"
             />
             <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
@@ -92,4 +98,16 @@ export default function Page() {
       ))}
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const response = await fetcher(
+    `${process.env.NEXT_PUBLIC_BASEURL}/api/home-page`
+  );
+
+  return {
+    props: {
+      data: response.data.attributes.experience,
+    },
+  };
 }

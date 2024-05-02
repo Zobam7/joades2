@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Markdown from "markdown-to-jsx";
 
 const Main = ({ title, subTitle }) => {
   return (
@@ -15,13 +16,10 @@ const Main = ({ title, subTitle }) => {
             Hi, I&apos;m <span className="text-[#5651e5]">Johnson</span>
           </h1>
           <h1 className="py-2 text-gray-700">{title}</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] mx-auto">
-            {" "}
-            {/* Johnson is a versatile Engineer with <strong>7+ years </strong>of
-            experience managing complex Cloud, Hybrid and on-premises
-            Infrastructures. */}
-            {subTitle}
-          </p>
+          <div className="py-4 text-gray-600 max-w-[70%] mx-auto">
+            <Markdown>{subTitle}</Markdown>
+          </div>
+
           <div className="flex flex-wrap items-center justify-center mx-auto py-4 gap-5">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <a

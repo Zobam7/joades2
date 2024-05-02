@@ -1,10 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import Markdown from "markdown-to-jsx";
+import Image from "next/image";
+import Joades from "../public/about2.jpg";
 
 const About = ({ aboutDesc, aboutImg }) => {
-  const imgurl =
-    process.env.NEXT_PUBLIC_BASEURL + aboutImg?.data?.attributes.url;
+  const imgurl = aboutImg.data.attributes.url || Joades;
 
+  const myLoader = ({ src }) => {
+    return aboutImg.data.attributes.url || Joades;
+  };
   return (
     <div id="about">
       <div className="w-full min-h-screen pt-10 px-16 flex items-center">
@@ -14,15 +19,22 @@ const About = ({ aboutDesc, aboutImg }) => {
               About
             </p>
             <h2 className="py-4">Who I Am</h2>
-            <p className="py-2 text-gray-600 max-w-xl tracking-wider break-words">
-              {aboutDesc}
-            </p>
+            <div className="py-2 text-gray-600 max-w-xl tracking-wider break-words">
+              <Markdown>{aboutDesc}</Markdown>
+            </div>
             <p className="py-2  underline cursor-pointer uppercase  text-[#5651e5]">
               <Link href="/#experience">Check out my Experiences</Link>{" "}
             </p>
           </div>
           <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <img className="rounded-xl " src={imgurl} alt="aboutMe" />
+            <Image
+              loader={myLoader}
+              className="rounded-xl "
+              src={imgurl}
+              alt="aboutMe"
+              width={360}
+              height={540}
+            />
           </div>
         </div>
       </div>
