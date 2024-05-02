@@ -29,7 +29,7 @@ const About = ({ aboutDesc, aboutImg }) => {
           <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
               loader={myLoader}
-              className="rounded-xl "
+              className="rounded-xl object-cover"
               src={imgurl}
               alt="aboutMe"
               width={360}
