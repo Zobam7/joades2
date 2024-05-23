@@ -21,10 +21,11 @@ const ExperienceItem = ({
             <p className="text-[12px] font-semibold">{subtitle}</p>
             <small className="">{date}</small>
             <small>{location}</small>
-            <Link href={experienceUrl}>
-              <a className="underline text-[#5651e5] underline-offset-4 mt-6">
-                Click here to see details
-              </a>
+            <Link
+              href={experienceUrl}
+              className="underline text-[#5651e5] underline-offset-4 mt-6"
+            >
+              Click here to see details
             </Link>
           </div>
         </div>
