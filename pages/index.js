@@ -12,6 +12,33 @@ import { useState, useEffect } from "react";
 import { LineWave } from "react-loader-spinner";
 import { fetcher } from "../lib/api";
 
+// Define fetchWithRetry function outside of the component
+const fetchWithRetry = async (
+  url,
+  options = {},
+  retries = 5,
+  backoff = 5000
+) => {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error(`Attempt ${i + 1} failed: ${error.message}`);
+      if (i < retries - 1) {
+        await new Promise((res) => setTimeout(res, backoff));
+        backoff *= 2; // Exponential backoff
+      } else {
+        throw error;
+      }
+    }
+  }
+};
+
 export default function Home({ data }) {
   return (
     <div>
@@ -35,13 +62,24 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const response = await fetcher(
-    `${process.env.NEXT_PUBLIC_BASEURL}/api/home-page`
-  );
+  try {
+    const response = await fetchWithRetry(
+      `${process.env.NEXT_PUBLIC_BASEURL}/api/home-page`
+    );
 
-  return {
-    props: {
-      data: response.data.attributes,
-    },
-  };
+    return {
+      props: {
+        data: response.data.attributes,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+
+    return {
+      props: {
+        data: null,
+        error: "Failed to load data after multiple retries",
+      },
+    };
+  }
 }
